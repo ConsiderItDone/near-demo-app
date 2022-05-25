@@ -7,13 +7,6 @@ type Props = {
   defaultVariables?: any;
 };
 
-const textAreaStyle = {
-  padding: "10px",
-  minWidth: "200px",
-  width: "40%",
-  minHeight: "150px",
-  height: "100%",
-};
 
 export default function ResultContainer({
   title,
@@ -69,10 +62,9 @@ export default function ResultContainer({
   };
 
   return (
-    <div style={{ display: "flex", marginBottom: "15px" }}>
-      <button onClick={handleOnClick}>{title}</button>
+    <div style={{position: 'relative'}}>
+      <button className="btn" onClick={handleOnClick}>{title}</button>
       <textarea
-        style={textAreaStyle}
         value={variables}
         onChange={(e) => {
           e.preventDefault();
@@ -82,7 +74,6 @@ export default function ResultContainer({
       <textarea
         disabled
         style={{
-          ...textAreaStyle,
           border: `1.5px solid ${
             status === "success" ? "green" : status === "error" ? "red" : ""
           }`,

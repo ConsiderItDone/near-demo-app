@@ -8,6 +8,7 @@ export const getPlugins = () => {
     {
       uri: "ens/nearPlugin.web3api.eth",
       plugin: nearPlugin({
+        //@ts-ignore 
         headers: {},
         networkId: "testnet",
         nodeUrl: "https://rpc.testnet.near.org",

@@ -9,8 +9,8 @@ export default function Utils() {
   const [, format] = useQuery(Near_Queries.formatNearAmount);
 
   return (
-    <div>
-      <h1>Utils</h1>
+    <div style={{textAlign: 'center'}}>
+      <h1 className="secondaryTitle">Utils</h1>
       <ResultContainer
         title="formatNearAmount"
         action={format}

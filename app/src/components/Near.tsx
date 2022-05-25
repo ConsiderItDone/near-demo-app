@@ -78,11 +78,19 @@ export default function Near() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <button onClick={consolePlugins}>Console Plugins</button>
+    <div className="appContainer">
+      <div className="logo"/>
+      <div className="titleContainer">
+        <div className="title">Polywrap NEAR Integration
+          <div className="polywrap"/>
+          <div className="near"/>
+        </div>
+      </div>
+      {/* <button onClick={consolePlugins}>Console Plugins</button> */}
       <Utils />
       <JsonRpcQueries />
       {/* <Transaction /> */}
+      <div className="fotterText">copyright © 2022 . CIDT Technologies. All rights reserved</div>
     </div>
   );
 }
