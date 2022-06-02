@@ -6,6 +6,8 @@ import { BlockResult } from "../utils/types";
 import JsonRpcQueries from "./JsonRpcQueries";
 import Transaction from "./Transactions";
 import Utils from "./Utils";
+// @ts-ignore
+import cosmos from '../images/cos.mp4';
 
 export default function Near() {
   const client = useWeb3ApiClient();
@@ -79,6 +81,18 @@ export default function Near() {
 
   return (
     <div className="appContainer">
+    <video className="video" loop autoPlay muted>
+      <source src={cosmos} type="video/mp4" />
+    </video>
+    <video className="videoS" loop autoPlay muted>
+      <source src={cosmos} type="video/mp4" />
+    </video>
+    <video className="videoT" loop autoPlay muted>
+      <source src={cosmos} type="video/mp4" />
+    </video>
+    <video className="videoF" loop autoPlay muted>
+      <source src={cosmos} type="video/mp4" />
+    </video>
       <div className="logo"/>
       <div className="titleContainer">
         <div className="title">Polywrap NEAR Integration

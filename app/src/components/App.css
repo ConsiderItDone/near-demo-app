@@ -3,7 +3,6 @@
 }
 html, body {
   max-width: 100%;
-  height: 100%;
   overflow-x: hidden;
   font-family: 'Montserrat';
 }
@@ -16,7 +15,34 @@ body {
 a {
   text-decoration: none;
 }
-
+.video {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.videoS{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 1000px;
+  left: 0;
+}
+.videoT{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 2000px;
+  left: 0;
+}
+.videoF{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 3000px;
+  left: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -30,9 +56,11 @@ button {
 }
 
 .appContainer {
+  position: relative;
   background-color: #000000E0;
   padding: 40px 60px;
   text-align: center;
+  overflow: hidden;
 }
 .appContainer .titleContainer {
     padding: 80px 120px 150px;
@@ -95,7 +123,7 @@ button {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40px);
   border-radius: 12px;
-  padding: 30px 20px 43px 20px;
+  padding: 40px 20px 43px 20px;
   color: #FFFFFF !important;
   margin-right: 25px;
   min-width: 200px;
@@ -103,6 +131,33 @@ button {
   min-height: 150px;
   height: 100%;
   margin-bottom: 26px;
+}
+.appContainer .btnApplay {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0, -50%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #005AFF;
+  background-color: inherit;
+  border: none;
+}
+.appContainer .secondary { 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 16px; 
+  left: 20px;
+  opacity: 0.5;
 }
 .appContainer textarea:hover,
 .appContainer textarea:focus,
