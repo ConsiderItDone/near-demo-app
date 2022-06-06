@@ -1,38 +1,182 @@
-.App {
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Montserrat';
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+.video {
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.videoS{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 1000px;
+  left: 0;
+}
+.videoT{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 2000px;
+  left: 0;
+}
+.videoF{
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
+  z-index: -1;
+  top: 3000px;
+  left: 0;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 12px 160px 12px;
+}
+
+.appContainer {
+  position: relative;
+  background-color: #000000E0;
+  padding: 40px 60px;
   text-align: center;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appContainer .titleContainer {
+    padding: 80px 120px 150px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.appContainer .logo {
+  width: 160px;
+  height: 65px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.appContainer .title {
+  width: 540px;
+  position: relative;
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 76px;
+  line-height: 88px;
+  color: #FFFFFF;
+  text-align: left;
 }
-
-.App-link {
-  color: #61dafb;
+.appContainer .polywrap{
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background-image: url(../images/polywrap.png);
+  background-size: contain;
+  right: -75%;
+  top: -25%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appContainer .near{
+  position: absolute;
+  background-size: contain;
+  right: -100%;
+  top: 36%;
+  width: 280px;
+  height: 280px;
+  background-image: url(../images/near.png);
+}
+.appContainer .secondaryTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.appContainer .fotterText{
+  margin-top: 120px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+.appContainer textarea {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px);
+  border-radius: 12px;
+  padding: 40px 20px 43px 20px;
+  color: #FFFFFF !important;
+  margin-right: 25px;
+  min-width: 200px;
+  width: 40%;
+  min-height: 150px;
+  height: 100%;
+  margin-bottom: 26px;
+}
+.appContainer .btnApplay {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0, -50%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #005AFF;
+  background-color: inherit;
+  border: none;
+}
+.appContainer .secondary { 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 16px; 
+  left: 20px;
+  opacity: 0.5;
+}
+.appContainer textarea:hover,
+.appContainer textarea:focus,
+.appContainer textarea:active {
+  border: 1px solid  grey !important;
+  box-shadow: none !important;
+}
+.appContainer .btn{
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF !important;
+  opacity: 0.5;
+  border: none;
+  background-color: inherit;
+  top: 16px;
+  left: 80px;
+  cursor: pointer;
 }

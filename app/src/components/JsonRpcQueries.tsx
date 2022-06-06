@@ -22,8 +22,8 @@ export default function JsonRpcQueries() {
   const [, gasPrice] = useQuery(Near_Queries.getGasPrice);
 
   return (
-    <div>
-      <h1>JsonRpcQueries</h1>
+    <div style={{textAlign: 'center'}}>
+      <h1 className="secondaryTitle">JsonRpcQueries</h1>
       <ResultContainer title="status" action={status} />
       <ResultContainer
         title="getBlock"
