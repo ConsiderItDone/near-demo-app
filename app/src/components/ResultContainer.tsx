@@ -7,7 +7,6 @@ type Props = {
   defaultVariables?: any;
 };
 
-
 export default function ResultContainer({
   title,
   action,
@@ -62,32 +61,39 @@ export default function ResultContainer({
   };
 
   return (
-    <div style={{display: 'flex'}}>
-     <div style={{height: '100%', width: '50%', position: 'relative'}}>
-      <textarea
-       style={{ width: '90%',}}
-        value={variables}
-        onChange={(e) => {
-          e.preventDefault();
-          setVariables(e.target.value);
-        }}
-      > 
-      </textarea>
-      <span className="secondary">{title}</span>
-      <button className="btnApplay" onClick={handleOnClick}>Applay</button>
-     </div>
-   <div style={{height: '100%', width: '50%'}}>
-   <textarea
-        disabled
-        style={{
-          width: '90%',
-          border: `1.5px solid ${
-            status === "success" ? "green" : status === "error" ? "red" : ""
-          }`,
-        }}
-        value={state}
-      />
-   </div>
+    <div style={{ display: "flex" }}>
+      <div style={{ height: "100%", width: "50%", position: "relative" }}>
+        <textarea
+          style={{ width: "90%" }}
+          value={variables}
+          onChange={(e) => {
+            e.preventDefault();
+            setVariables(e.target.value);
+          }}
+        ></textarea>
+        <span className="secondary" style={{ marginLeft: "20px" }}>
+          {title}
+        </span>
+        <button
+          className="btnApplay"
+          onClick={handleOnClick}
+          style={{ marginRight: "20px" }}
+        >
+          Apply
+        </button>
+      </div>
+      <div style={{ height: "100%", width: "50%" }}>
+        <textarea
+          disabled
+          style={{
+            width: "90%",
+            border: `1.5px solid ${
+              status === "success" ? "green" : status === "error" ? "red" : ""
+            }`,
+          }}
+          value={state}
+        />
+      </div>
     </div>
   );
 }

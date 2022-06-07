@@ -1,5 +1,5 @@
 import { useWeb3ApiClient } from "@web3api/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "../utils/hooks";
 import { Near_Queries } from "../utils/queries";
 import { BlockResult } from "../utils/types";
@@ -79,6 +79,9 @@ export default function Near() {
     console.log(client.getPlugins());
   };
 
+  useEffect(()=>{
+    client.resolveUri('ipfs/Qmb2iRbUEZDispSA9ggunmw2uHFNqeRDxcVzty5gC9zCg6').then(console.log)
+  },[])
   return (
     <div className="appContainer">
     <video className="video" loop autoPlay muted>
