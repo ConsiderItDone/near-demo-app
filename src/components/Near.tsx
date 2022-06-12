@@ -79,9 +79,6 @@ export default function Near() {
     console.log(client.getPlugins());
   };
 
-  useEffect(()=>{
-    client.resolveUri('ipfs/Qmb2iRbUEZDispSA9ggunmw2uHFNqeRDxcVzty5gC9zCg6').then(console.log)
-  },[])
   return (
     <div className="appContainer">
     <video className="video" loop autoPlay muted>
