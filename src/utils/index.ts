@@ -1,5 +1,5 @@
 import { nearPlugin } from "@cidt/near-plugin-js";
-export const apiUri = "ipfs/Qmb5kp7RtdaUD3VJtBsdmRPErrGC91kv7S4HAVahtpgyya";
+export const apiUri = "ipfs/QmPvpj2VcHKJF2ZZYtBqbitrGwcvnhbCD1PnUCVKGM2EL2";
 
 export const getPlugins = () => {
   return [
