@@ -16,6 +16,7 @@ a {
   text-decoration: none;
 }
 .video {
+  width: 100%;
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
   z-index: -1;
@@ -23,6 +24,7 @@ a {
   left: 0;
 }
 .videoS{
+  width: 100%;
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
   z-index: -1;
@@ -30,6 +32,7 @@ a {
   left: 0;
 }
 .videoT{
+  width: 100%;
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
   z-index: -1;
@@ -37,6 +40,7 @@ a {
   left: 0;
 }
 .videoF{
+  width: 100%;
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84));
   z-index: -1;
